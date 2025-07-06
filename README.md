@@ -1,3 +1,0 @@
-# Debatify
-
-A powerful AI debate platform...
