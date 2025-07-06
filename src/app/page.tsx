@@ -130,10 +130,10 @@ const handleSendMessage = async () => {
 
       {/* Floating Navigation */}
       <nav className="fixed top-6 left-1/2 transform -translate-x-1/2 z-50">
-        <div className={`glass-nav soft-glow rounded-full px-8 py-4 relative ${isScrolled ? "compact" : ""}`}>
+<div className={`glass-nav soft-glow rounded-full px-4 py-2 sm:px-6 sm:py-3 md:px-8 md:py-4 relative ${isScrolled ? "compact" : ""}`}>
           <div className="flex items-center justify-between transition-all duration-300">
             {/* Logo - Always visible */}
-            <div className="flex items-center space-x-2">
+            <div className="flex items-center gap-1 md:gap-4 transition-all duration-300 text-[10px] sm:text-xs md:text-sm">
               <div className="w-8 h-8 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-full flex items-center justify-center">
                 <Sparkles className="w-4 h-4 text-white" />
               </div>
@@ -142,26 +142,27 @@ const handleSendMessage = async () => {
 
             {/* Navigation Links - Hidden when scrolled */}
 <div
-  className={`flex items-center space-x-2 md:space-x-4 transition-all duration-300 ${
+  className={`flex items-center gap-1 md:gap-4 transition-all duration-300 text-[10px] sm:text-xs md:text-sm ${
     isScrolled ? "opacity-0 w-0 overflow-hidden" : "opacity-100"
   }`}
 >
   <button
     onClick={() => setMode("chat")}
-    className="text-xs md:text-sm text-white/90 hover:text-white transition-colors px-2 py-1 md:px-3 md:py-1.5 rounded-full hover:bg-white/10 font-medium whitespace-nowrap"
+    className="text-white/90 hover:text-white transition-colors px-1.5 py-1 md:px-3 md:py-1.5 rounded-full hover:bg-white/10 font-medium whitespace-nowrap"
+
   >
     AI vs AI
   </button>
   <button
     onClick={() => setMode("turn")}
-    className="text-xs md:text-sm text-white/90 hover:text-white transition-colors px-2 py-1 md:px-3 md:py-1.5 rounded-full hover:bg-white/10 font-medium whitespace-nowrap"
+    className="text-white/90 hover:text-white transition-colors px-1.5 py-1 md:px-3 md:py-1.5 rounded-full hover:bg-white/10 font-medium whitespace-nowrap"
   >
     You vs AI
   </button>
   {user && (
     <button
       onClick={() => setShowSaved(true)}
-      className="text-xs md:text-sm text-white/90 hover:text-white transition-colors px-2 py-1 md:px-3 md:py-1.5 rounded-full hover:bg-white/10 font-medium whitespace-nowrap"
+      className="text-white/90 hover:text-white transition-colors px-1.5 py-1 md:px-3 md:py-1.5 rounded-full hover:bg-white/10 font-medium whitespace-nowrap"
     >
       Saved
     </button>
@@ -191,7 +192,7 @@ const handleSendMessage = async () => {
               ) : (
                 <button
                   onClick={() => setShowLoginModal(true)}
-                  className="bg-white/20 hover:bg-white/30 text-white px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 backdrop-blur-sm whitespace-nowrap"
+                  className="text-white/90 hover:text-white transition-colors px-1.5 py-1 md:px-3 md:py-1.5 rounded-full hover:bg-white/10 font-medium whitespace-nowrap"
                 >
                   Login
                 </button>
@@ -242,7 +243,7 @@ const handleSendMessage = async () => {
           {!mode && (
             <>
               {/* Hero Section with Abstract Lines */}
-              <div className="text-center mb-20 animate-fade-in-up hero-abstract-lines relative">
+<div className="text-center mb-20 px-4 sm:px-6 animate-fade-in-up hero-abstract-lines relative">
 <h1 className="hero-title mb-8 relative z-10">
   Welcome to <span className="text-secondary">Debatify</span>: Your AI-Powered Debate Partner
 </h1>
@@ -310,9 +311,9 @@ const handleSendMessage = async () => {
                     </div>
 
                     {/* Feature Grid */}
-                    <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+<div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 max-w-6xl mx-auto">
                       {/* AI vs AI Feature */}
-                      <div className="card-3d rounded-2xl p-8 bg-gradient-to-br from-blue-50/20 to-cyan-50/20 dark:from-blue-900/10 dark:to-cyan-900/10">
+                      <div className="card-3d rounded-2xl p-6 sm:p-8 bg-gradient-to-br from-blue-50/20 to-cyan-50/20 dark:from-blue-900/10 dark:to-cyan-900/10">
                         <div className="flex items-center space-x-4 mb-6">
                           <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center">
                             <Users className="w-6 h-6 text-white" />
@@ -335,7 +336,7 @@ const handleSendMessage = async () => {
                       </div>
 
                       {/* You vs AI Feature */}
-                      <div className="card-3d rounded-2xl p-8 bg-gradient-to-br from-green-50/20 to-emerald-50/20 dark:from-green-900/10 dark:to-emerald-900/10">
+                      <div className="card-3d rounded-2xl p-6 sm:p-8 bg-gradient-to-br from-green-50/20 to-emerald-50/20 dark:from-green-900/10 dark:to-emerald-900/10">
                         <div className="flex items-center space-x-4 mb-6">
                           <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-500 rounded-xl flex items-center justify-center">
                             <Brain className="w-6 h-6 text-white" />
@@ -356,7 +357,7 @@ const handleSendMessage = async () => {
                       </div>
 
                       {/* Additional Features */}
-                      <div className="card-3d rounded-2xl p-8 bg-gradient-to-br from-purple-50/20 to-pink-50/20 dark:from-purple-900/10 dark:to-pink-900/10">
+                      <div className="card-3d rounded-2xl p-6 sm:p-8 bg-gradient-to-br from-purple-50/20 to-pink-50/20 dark:from-purple-900/10 dark:to-pink-900/10">
                         <div className="flex items-center space-x-4 mb-6">
                           <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl flex items-center justify-center">
                             <Lightbulb className="w-6 h-6 text-white" />
@@ -377,7 +378,7 @@ const handleSendMessage = async () => {
                         </div>
                       </div>
 
-                      <div className="card-3d rounded-2xl p-8 bg-gradient-to-br from-orange-50/20 to-red-50/20 dark:from-orange-900/10 dark:to-red-900/10">
+                      <div className="card-3d rounded-2xl p-6 sm:p-8 bg-gradient-to-br from-orange-50/20 to-red-50/20 dark:from-orange-900/10 dark:to-red-900/10">
                         <div className="flex items-center space-x-4 mb-6">
                           <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-500 rounded-xl flex items-center justify-center">
                             <TrendingUp className="w-6 h-6 text-white" />
