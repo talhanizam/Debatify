@@ -291,7 +291,7 @@ const handleSendMessage = async () => {
                 </div>
 
                 {/* Main Features Container */}
-                <div className="feature-container-3d rounded-[2rem] p-4 sm:p-6 md:p-12 relative overflow-hidden w-full max-w-none">
+<div className="feature-container-3d rounded-[2rem] p-4 sm:p-6 md:p-12 relative overflow-hidden w-full max-w-none px-2 sm:px-6">
                   {/* Background Pattern */}
                   <div className="absolute inset-0 opacity-10">
                     <div className="absolute top-10 left-10 w-32 h-32 bg-purple-500 rounded-full blur-3xl"></div>
@@ -304,23 +304,23 @@ const handleSendMessage = async () => {
                         Intelligent Debate Platform with{" "}
                         <span className="text-purple-600 dark:text-purple-400">Advanced AI</span>
                       </h2>
-                      <p className="text-xl text-secondary max-w-3xl mx-auto">
+                      <p className="text-xl text-secondary max-w-none sm:max-w-3xl mx-auto px-3 sm:px-0">
                         From real-time AI conversations to personalized debate coaching, experience the future of
                         intellectual discourse with our cutting-edge technology.
                       </p>
                     </div>
 
                     {/* Feature Grid */}
-<div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-12 w-full px-2 sm:px-6 md:px-0">
+<div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-12 w-full px-4 sm:px-6 md:px-0">
                       {/* AI vs AI Feature */}
-                      <div className="card-3d w-full rounded-2xl p-4 sm:p-6 md:p-8 bg-gradient-to-br from-blue-50/20 to-cyan-50/20 dark:from-blue-900/10 dark:to-cyan-900/10">
+                      <div className="card-3d w-full rounded-2xl py-6 px-4 sm:py-8 sm:px-6 md:py-10 md:px-8 bg-gradient-to-br from-blue-50/20 to-cyan-50/20 dark:from-blue-900/10 dark:to-cyan-900/10">
                         <div className="flex items-center space-x-4 mb-6">
                           <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center">
                             <Users className="w-6 h-6 text-white" />
                           </div>
                           <h3 className="text-2xl font-bold text-primary">AI vs AI Debates</h3>
                         </div>
-                        <p className="text-secondary text-lg leading-relaxed mb-6">
+<p className="text-secondary text-base sm:text-lg leading-relaxed mb-6">
                           Watch two advanced AI systems engage in sophisticated debates on any topic. Perfect for
                           understanding multiple perspectives and learning advanced argumentation techniques.
                         </p>
@@ -336,7 +336,7 @@ const handleSendMessage = async () => {
                       </div>
 
                       {/* You vs AI Feature */}
-                      <div className="card-3d w-full rounded-2xl p-4 sm:p-6 md:p-8 bg-gradient-to-br from-green-50/20 to-emerald-50/20 dark:from-green-900/10 dark:to-emerald-900/10">
+                      <div className="card-3d w-full rounded-2xl py-6 px-4 sm:py-8 sm:px-6 md:py-10 md:px-8 bg-gradient-to-br from-green-50/20 to-emerald-50/20 dark:from-green-900/10 dark:to-emerald-900/10">
                         <div className="flex items-center space-x-4 mb-6">
                           <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-500 rounded-xl flex items-center justify-center">
                             <Brain className="w-6 h-6 text-white" />
@@ -357,7 +357,7 @@ const handleSendMessage = async () => {
                       </div>
 
                       {/* Additional Features */}
-                      <div className="card-3d w-full rounded-2xl p-4 sm:p-6 md:p-8 bg-gradient-to-br from-purple-50/20 to-pink-50/20 dark:from-purple-900/10 dark:to-pink-900/10">
+                      <div className="card-3d w-full rounded-2xl py-6 px-4 sm:py-8 sm:px-6 md:py-10 md:px-8 bg-gradient-to-br from-purple-50/20 to-pink-50/20 dark:from-purple-900/10 dark:to-pink-900/10">
                         <div className="flex items-center space-x-4 mb-6">
                           <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl flex items-center justify-center">
                             <Lightbulb className="w-6 h-6 text-white" />
@@ -378,7 +378,7 @@ const handleSendMessage = async () => {
                         </div>
                       </div>
 
-                      <div className="card-3d w-full rounded-2xl p-4 sm:p-6 md:p-8 bg-gradient-to-br from-orange-50/20 to-red-50/20 dark:from-orange-900/10 dark:to-red-900/10">
+                      <div className="card-3d w-full rounded-2xl py-6 px-4 sm:py-8 sm:px-6 md:py-10 md:px-8 bg-gradient-to-br from-orange-50/20 to-red-50/20 dark:from-orange-900/10 dark:to-red-900/10">
                         <div className="flex items-center space-x-4 mb-6">
                           <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-500 rounded-xl flex items-center justify-center">
                             <TrendingUp className="w-6 h-6 text-white" />
