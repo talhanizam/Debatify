@@ -291,7 +291,7 @@ const handleSendMessage = async () => {
                 </div>
 
                 {/* Main Features Container */}
-                <div className="feature-container-3d rounded-[2rem] p-12 relative overflow-hidden">
+                <div className="feature-container-3d rounded-[2rem] p-4 sm:p-6 md:p-12 relative overflow-hidden w-full max-w-none">
                   {/* Background Pattern */}
                   <div className="absolute inset-0 opacity-10">
                     <div className="absolute top-10 left-10 w-32 h-32 bg-purple-500 rounded-full blur-3xl"></div>
@@ -311,9 +311,9 @@ const handleSendMessage = async () => {
                     </div>
 
                     {/* Feature Grid */}
-<div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 max-w-6xl mx-auto">
+<div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-12 w-full px-2 sm:px-6 md:px-0">
                       {/* AI vs AI Feature */}
-                      <div className="card-3d rounded-2xl p-6 sm:p-8 bg-gradient-to-br from-blue-50/20 to-cyan-50/20 dark:from-blue-900/10 dark:to-cyan-900/10">
+                      <div className="card-3d w-full rounded-2xl p-4 sm:p-6 md:p-8 bg-gradient-to-br from-blue-50/20 to-cyan-50/20 dark:from-blue-900/10 dark:to-cyan-900/10">
                         <div className="flex items-center space-x-4 mb-6">
                           <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center">
                             <Users className="w-6 h-6 text-white" />
@@ -336,7 +336,7 @@ const handleSendMessage = async () => {
                       </div>
 
                       {/* You vs AI Feature */}
-                      <div className="card-3d rounded-2xl p-6 sm:p-8 bg-gradient-to-br from-green-50/20 to-emerald-50/20 dark:from-green-900/10 dark:to-emerald-900/10">
+                      <div className="card-3d w-full rounded-2xl p-4 sm:p-6 md:p-8 bg-gradient-to-br from-green-50/20 to-emerald-50/20 dark:from-green-900/10 dark:to-emerald-900/10">
                         <div className="flex items-center space-x-4 mb-6">
                           <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-500 rounded-xl flex items-center justify-center">
                             <Brain className="w-6 h-6 text-white" />
@@ -357,7 +357,7 @@ const handleSendMessage = async () => {
                       </div>
 
                       {/* Additional Features */}
-                      <div className="card-3d rounded-2xl p-6 sm:p-8 bg-gradient-to-br from-purple-50/20 to-pink-50/20 dark:from-purple-900/10 dark:to-pink-900/10">
+                      <div className="card-3d w-full rounded-2xl p-4 sm:p-6 md:p-8 bg-gradient-to-br from-purple-50/20 to-pink-50/20 dark:from-purple-900/10 dark:to-pink-900/10">
                         <div className="flex items-center space-x-4 mb-6">
                           <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl flex items-center justify-center">
                             <Lightbulb className="w-6 h-6 text-white" />
@@ -378,7 +378,7 @@ const handleSendMessage = async () => {
                         </div>
                       </div>
 
-                      <div className="card-3d rounded-2xl p-6 sm:p-8 bg-gradient-to-br from-orange-50/20 to-red-50/20 dark:from-orange-900/10 dark:to-red-900/10">
+                      <div className="card-3d w-full rounded-2xl p-4 sm:p-6 md:p-8 bg-gradient-to-br from-orange-50/20 to-red-50/20 dark:from-orange-900/10 dark:to-red-900/10">
                         <div className="flex items-center space-x-4 mb-6">
                           <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-500 rounded-xl flex items-center justify-center">
                             <TrendingUp className="w-6 h-6 text-white" />
