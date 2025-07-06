@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "AI Debate Arena",
+  title: "Debatify",
   description: "Intelligent discourse platform powered by AI",
 }
 
