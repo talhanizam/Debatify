@@ -165,7 +165,7 @@ export default function TurnBasedDebate({ onBack }: { onBack: () => void }) {
           </div>
 
           <div className="max-w-2xl mx-auto mb-8">
-            <div className="flex items-center space-x-3 mb-4">
+<div className="flex flex-col sm:flex-row gap-3 mb-4">
               <input
                 type="text"
                 placeholder="Enter your debate topic..."
@@ -242,13 +242,14 @@ export default function TurnBasedDebate({ onBack }: { onBack: () => void }) {
           ) : (
             messages.map((m, i) => (
               <div
-                key={i}
-                className={`p-4 rounded-xl ${
-                  m.startsWith("🧑 You:")
-                    ? "glass-card border-l-4 border-purple-500 ml-8"
-                    : "glass-card border-l-4 border-gray-400 mr-8"
-                }`}
-              >
+  key={i}
+  className={`p-1 rounded-xl glass-card border-l-4 ${
+    m.startsWith("🧑 You:")
+      ? "border-purple-500 sm:ml-8"
+      : "border-gray-400 sm:mr-8"
+  }`}
+>
+
                 <p>{m}</p>
               </div>
             ))
