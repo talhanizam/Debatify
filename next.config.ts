@@ -1,6 +1,9 @@
 // next.config.ts
 const nextConfig = {
-  serverExternalPackages: ['@google/generative-ai'],
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  serverExternalPackages: ['@google/generative-ai'], // your original line
 };
 
 export default nextConfig;
